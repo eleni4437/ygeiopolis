@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Χειρουργεία{% endblock %}
+{% block page_title %}Χειρουργεία & Επεμβάσεις{% endblock %}
+{% block content %}
+<div class="card">
+  <div class="card-body p-0">
+    <table class="table table-hover mb-0">
+      <thead class="table-light">
+        <tr>
+          <th>Ασθενής</th>
+          <th>Επέμβαση</th>
+          <th>Τύπος</th>
+          <th>Κύριος Χειρουργός</th>
+          <th>Έναρξη</th>
+          <th>Διάρκεια</th>
+          <th>Χ.Χ.</th>
+          <th>Κόστος</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for p in rows %}
+        <tr>
+          <td>
+            <a href="{{ url_for('patient_view', amka=p.patient_amka) }}">
+              {{ p.last_name }} {{ p.first_name }}
+            </a>
+          </td>
+          <td>{{ p.proc_name[:60] }}</td>
+          <td><span class="badge bg-info text-dark">{{ p.type }}</span></td>
+          <td class="small">{{ p.surg_ln }} {{ p.surg_fn }}</td>
+          <td class="small">{{ p.starting_time.strftime('%d/%m/%Y %H:%M') if p.starting_time else '-' }}</td>
+          <td class="small">{{ p.duration }}</td>
+          <td>{{ p.oproom_id }}</td>
+          <td>{{ '%.2f€'|format(p.cost) if p.cost else '-' }}</td>
+        </tr>
+        {% else %}
+        <tr><td colspan="8" class="text-center py-4 text-muted">Δεν βρέθηκαν χειρουργεία</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

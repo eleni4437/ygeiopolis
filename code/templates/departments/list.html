@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Τμήματα{% endblock %}
+{% block page_title %}Τμήματα Νοσοκομείου{% endblock %}
+{% block content %}
+<div class="row g-3">
+  {% for d in rows %}
+  <div class="col-md-4">
+    <div class="card h-100">
+      {% if d.image_url %}
+      <img src="{{ d.image_url }}" class="card-img-top" style="height:140px;object-fit:cover">
+      {% endif %}
+      <div class="card-body">
+        <h6 class="fw-bold">{{ d.dept_name }}</h6>
+        <p class="text-muted small mb-2">{{ d.description[:120] if d.description else '' }}</p>
+        <div class="d-flex gap-3 small">
+          <span><i class="bi bi-door-open me-1"></i>{{ d.rooms }} δωμάτια</span>
+          <span><i class="bi bi-person-badge me-1"></i>{{ d.doctors }} γιατροί</span>
+          <span><i class="bi bi-layers me-1"></i>Όροφος {{ d.floor }}</span>
+        </div>
+        {% if d.first_name %}
+        <div class="mt-2 small text-muted">
+          <i class="bi bi-person-check me-1"></i>Διευθυντής: {{ d.last_name }} {{ d.first_name }}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% else %}
+  <div class="col-12 text-center py-5 text-muted">Δεν βρέθηκαν τμήματα</div>
+  {% endfor %}
+</div>
+{% endblock %}

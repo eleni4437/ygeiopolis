@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}Εφημερίες{% endblock %}
+{% block page_title %}Εφημερίες{% endblock %}
+{% block content %}
+<div class="d-flex gap-2 mb-3 flex-wrap">
+  <form class="d-flex gap-2 flex-wrap" method="get">
+    <select class="form-select form-select-sm" name="dept" style="max-width:200px">
+      <option value="">Όλα τα Τμήματα</option>
+      {% for d in depts %}
+      <option value="{{ d.dept_name }}" {{ 'selected' if dept_filter==d.dept_name }}>{{ d.dept_name }}</option>
+      {% endfor %}
+    </select>
+    <input class="form-control form-control-sm" type="date" name="date" value="{{ date_filter }}" style="max-width:160px">
+    <button class="btn btn-sm btn-primary">Φιλτράρισμα</button>
+    <a href="{{ url_for('shifts') }}" class="btn btn-sm btn-outline-secondary">Επαναφορά</a>
+  </form>
+</div>
+
+<div class="card">
+  <div class="card-body p-0">
+    <table class="table table-hover mb-0">
+      <thead class="table-light">
+        <tr>
+          <th>Τμήμα</th>
+          <th>Ημ/νία</th>
+          <th>Βάρδια</th>
+          <th>Κατάσταση</th>
+          <th>Αριθμός Προσωπικού</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for s in rows %}
+        <tr>
+          <td>{{ s.dept_name }}</td>
+          <td>{{ s.date }}</td>
+          <td>
+            {% if 'πρωιν' in s.type.lower() or 'πρωι' in s.type.lower() %}
+              <span class="badge bg-warning text-dark"><i class="bi bi-sunrise me-1"></i>{{ s.type }}</span>
+            {% elif 'νυχτ' in s.type.lower() %}
+              <span class="badge bg-dark"><i class="bi bi-moon me-1"></i>{{ s.type }}</span>
+            {% else %}
+              <span class="badge bg-info text-dark"><i class="bi bi-sunset me-1"></i>{{ s.type }}</span>
+            {% endif %}
+          </td>
+          <td>
+            {% if s.status and 'ΕΓΚΕΚΡΙΜ' in s.status %}
+              <span class="badge bg-success">Εγκεκριμένη</span>
+            {% else %}
+              <span class="badge bg-secondary">{{ s.status }}</span>
+            {% endif %}
+          </td>
+          <td><span class="badge bg-primary">{{ s.staff_count }} άτομα</span></td>
+          <td>
+            <a href="{{ url_for('shift_view', dept=s.dept_name, date=s.date, shift_type=s.type) }}"
+               class="btn btn-sm btn-outline-primary">
+              <i class="bi bi-eye"></i> Λεπτομέρειες
+            </a>
+          </td>
+        </tr>
+        {% else %}
+        <tr><td colspan="6" class="text-center py-4 text-muted">Δεν βρέθηκαν εφημερίες</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}Νέα Νοσηλεία{% endblock %}
+{% block page_title %}Νέα Νοσηλεία{% endblock %}
+{% block content %}
+<div class="mb-3">
+  <a href="{{ url_for('hospitalizations') }}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-arrow-left"></i> Πίσω</a>
+</div>
+<div class="card" style="max-width:700px">
+  <div class="card-body">
+    <form method="post">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label">Ασθενής *</label>
+          <select class="form-select" name="patient_amka" required>
+            <option value="">-- Επιλέξτε ασθενή --</option>
+            {% for p in patients_list %}
+            <option value="{{ p.amka }}">{{ p.last_name }} {{ p.first_name }} ({{ p.amka }})</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Ημ/νία Εισαγωγής *</label>
+          <input class="form-control" type="datetime-local" name="entry_date" required>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Τμήμα *</label>
+          <select class="form-select" name="dept_name" id="deptSelect" required>
+            <option value="">-- Επιλέξτε τμήμα --</option>
+            {% for d in depts %}
+            <option value="{{ d.dept_name }}">{{ d.dept_name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Δωμάτιο *</label>
+          <select class="form-select" name="room_number" required>
+            <option value="">-- Επιλέξτε δωμάτιο --</option>
+            {% for r in rooms %}
+            <option value="{{ r.room_number }}" data-dept="{{ r.dept_name }}">
+              {{ r.room_number }} - {{ r.room_type }} ({{ r.dept_name }})
+            </option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Διάγνωση Εισόδου (ICD) *</label>
+          <select class="form-select" name="entry_diagnosis" required>
+            <option value="">-- Επιλέξτε διάγνωση --</option>
+            {% for d in diagnoses %}
+            <option value="{{ d.ICD }}">{{ d.ICD }} - {{ d.description[:60] }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Κωδικός ΚΕΝ *</label>
+          <select class="form-select" name="ken_code" required>
+            <option value="">-- Επιλέξτε ΚΕΝ --</option>
+            {% for k in ken_list %}
+            <option value="{{ k.ken_code }}">{{ k.ken_code }} - {{ k.description[:50] }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-success" type="submit">
+            <i class="bi bi-check-circle me-1"></i> Καταχώρηση Νοσηλείας
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

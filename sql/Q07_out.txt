@@ -1,0 +1,1001 @@
+substance_id,drastiki_ousia,arithmos_allergikon_asthenwn,arithmos_farmakon
+139427,"Aristolochia Clematitis D12",2,1
+16,Estriol,1,46
+503,"Ammi Visnaga Dil. D 2",1,1
+525,"Formoterol Fumarate Dihydrate",1,253
+1233,"Alendronate Sodium Trihydrate",1,93
+1294,"Mycophenolic Acid",1,24
+1742,"Chlorhexidine Gluconate",1,221
+2785,"Arnica Montana D6",1,16
+2935,"Vs. 12c)",1,14
+3132,"Tirofiban Hydrochloride Monohydrate",1,11
+3203,"Agnus Castus Fruit Dry Extract (10-16:1)",1,2
+3311,"Coriandrum Sativum",1,1
+3593,"Bellis Perennis Ex Herba La 20% (Hab",1,1
+3649,"Acidum Benzoicum E Resina Dil. D4",1,3
+3788,Rosuvastatin,1,421
+5160,"Liquorice Root",1,59
+5417,"Avena Fatua Whole.",1,28
+6172,Spinach,1,8
+8669,Norgestimate,1,28
+8679,"Propamidine Isetionate",1,5
+12013,Prilocaine,1,37
+12437,"Tropaeolum Majus Herb",1,3
+12884,"Viper Antivenom",1,1
+13019,"Extraction Solvent: Purified Water",1,4
+13147,"Apis Mellifica D1000",1,1
+13503,"Acidum Sulfuricum Dil. D4",1,5
+13554,"Solanum Dulcamara Dil. D3",1,5
+13619,"Acidum Phosphoricum Dil. D4",1,6
+15057,"Eriodictyon Californicum Dil. D12",1,2
+15409,"Propafenone Hydrochloride",1,38
+15596,"Magnesium Aspartate",1,8
+18072,"Nitric Oxide",1,34
+18154,Dimercaprol,1,1
+20116,"Human Normal Immunoglobulin",1,45
+21477,"Lithium Muriaticum Trit. D6",1,1
+23189,"Hyoscine Hydrobromide",1,7
+23953,"Pancuronium Bromide",1,4
+27705,Sodium-L-Lactate,1,82
+30579,"Vs. 12f Mit Raffiniertem Erdnussöl)",1,1
+30977,Dinoprostone,1,19
+31335,"Wheat-Germ Oil",1,2
+31836,"Curcuma Zanthorrhiza Rhizoma D1",1,1
+31882,"Fluorocholine (18f) Chloride",1,9
+35430,"Viscum Album Spag. Peka Ø",1,1
+36972,"Lens Cristallina Bovis Gl Dil. D6 (Hab",1,2
+37098,"Methylprednisolone Sodium Succinate",1,18
+37816,Trientine,1,5
+38000,"Thuja Occidentalis Dil. D8",1,5
+38990,Benzylpenicilloyl-Octa-L-Lysine,1,1
+39521,"Sodium Iodide",1,10
+45163,"Melissa Officinalis Dry Extract",1,3
+46274,"Rhododendron D6",1,3
+46347,"Artemisia Vulgaris D6",1,1
+47006,"Corallium Rubrum C4",1,3
+49622,"Echinacea Pallida Root",1,1
+51797,"Wässriger Gesamtauszug Aus Enzianwurzel (0,3608 G)",1,1
+52248,Eptifibatide,1,10
+54087,"Pinus Sibirica Essential Oil",1,2
+55344,"Distillate Of Fresh Leaves And Twigs Of Hamamelis Virginiana (1 : 1,12 – 2,08)",1,3
+56142,"Phenobarbital Sodium",1,7
+57637,"Ethanol 60-70%",1,3
+59441,"Potassium Citrate Monobasic",1,1
+61264,"Ononis Spinosa D4",1,1
+62397,"Vivianit Dil. D7",1,3
+62975,"Dry Extract Of Ginkgo Biloba Leaf (35-67:1)",1,2
+63306,"Thymus Suis D30",1,1
+65439,"Hamamelis Virginiana Dil. D 2",1,4
+65444,"Hamamelis Virginiana Dil. D30",1,1
+65483,"Carduus Marianus Trit D1",1,2
+67419,"Kalium Bichromicum C6",1,6
+67993,"Wild Thyme And Thyme (1:2.33:3.33:2.33:19) (Der: 1: 6-7)",1,1
+69788,"Strychnos Ignatii E Semine Ferm 35b Dil. D3 (Hab",1,2
+70321,"Aroniae Fructus Succus (1:1)",1,1
+72963,Isoprenaline,1,1
+75847,"Strychnos Ignatii Trit. D 4",1,6
+75878,"Cimicifuga Racemosa Trit D2",1,5
+76163,Carbon,1,1
+80312,"Levomepromazine Maleate",1,9
+89215,"Methoxyflurane 99.9%",1,5
+93040,"Mucosa Recti Suis D8",1,4
+93582,"Mycophenolate Mofetil Ph. Eur.",1,2
+93724,"Gemtuzumab Ozogamicin",1,1
+97800,Mestranol,1,1
+106990,"Mercurius Solubilis Hahnemanni Dil. D10",1,1
+110430,"Caulophyllum Thalictroides Dil. D3",1,1
+113897,"Euphrasia Trit. D 3",1,1
+113951,"Balsamum Peruvianum (Hab 34) Dil. D 4",1,1
+116945,"Chlormidazole Hydrochloride",1,1
+123091,"Kieserit Dil. D19",1,1
+123844,"Serenoa Repens D2",1,4
+129663,Secretin,1,1
+131992,"Lobaria Pulmonaria Dil. D7",1,1
+136770,"Dry Extract Of Horse-Chestnut Equivalent To 1.08 - 1.60 G Of Horse-Chestnut Corresponding To 50 Mg Of Triterpene Glycosides Calculated As Aescin",1,1
+141096,"Sodium Chloride-Water (Brine) Sulfide",1,1
+141353,Solriamfetol,1,1
+141726,Siltuximab,1,1
+147254,"Atropinum Sulfuricum Trit. D5",1,5
+150838,"Acidum Acetylsalicylicum D10",1,2
+151989,"Dry Extract From Valerian Root (4-6:7:1)",1,1
+153789,"Tincture Of Grindelia",1,1
+154460,Pipobroman,1,1
+155582,"Salvia Officinalis D3",1,1
+156432,"Cyproheptadine Pyridoxalphosphate",1,1
+156545,"Flutemetamol (18f)",1,1
+157166,Zolbetuximab,1,1
+163213,"Dried Extract Of Milk Thistle Fruit (35-50:1)",1,1
+NULL,"Liquid Extract From Viscum Album Subsp. Abietis Var Abies Alba (1:20)",0,2
+NULL,"Extraction Solvents: Water For Injection And Sodium Chloride (99.91:0.09)",0,2
+NULL,"Vitamin A Concentrate (Oily Form)",0,10
+NULL,Synthetic,0,16
+NULL,"Acetylsalicylic Acid",0,618
+NULL,"Hypericum Perforatum L.",0,4
+NULL,"Tincture From Agnus Castus Fruit (1:10)",0,2
+NULL,"Extraction Solvent: Ethanol 69.5% V/V",0,2
+NULL,Benzocaine,0,132
+NULL,"Dexamethasone Base",0,1
+NULL,"Dexamethasone Sodium Phosphate",0,183
+NULL,"Reproterol Hydrochloride",0,3
+NULL,"Sodium Cromoglicate",0,113
+NULL,"Chlorphenamine Maleate",0,176
+NULL,"Phenylephrine Bitartrate",0,17
+NULL,Paracetamol,0,2379
+NULL,Abacavir,0,77
+NULL,Lamivudine,0,124
+NULL,Zidovudine,0,36
+NULL,"Abacavir Sulfate",0,4
+NULL,"Dabigatran Etexilate",0,183
+NULL,Pefloxacin,0,2
+NULL,"Pefloxacin Mesilate Dihydrate",0,1
+NULL,Rivaroxaban,0,352
+NULL,"Insulin Glargine",0,11
+NULL,Apixaban,0,276
+NULL,Atorvastatin,0,488
+NULL,Fentanyl,0,169
+NULL,Brivaracetam,0,61
+NULL,"Abiraterone Acetate",0,179
+NULL,Amoxicillin,0,598
+NULL,"Clavulanic Acid",0,412
+NULL,Tranylcypromine,0,15
+NULL,Erythromycin,0,68
+NULL,"Erythromycin Ethylsuccinate",0,26
+NULL,"Erythromycin Lactobionate",0,15
+NULL,"Erythromycin Stearate",0,6
+NULL,"Soft Extract Of Capsicum",0,2
+NULL,"(4-7: 1)",0,2
+NULL,"Corresponding To 4.8 Mg Of Capsaicinoids",0,2
+NULL,"Calculated As Capsaicin. Extraction Solvent: Ethanol 80% (V/V)",0,2
+NULL,Capsaicin,0,19
+NULL,"Soft Extract From Cayenne Pepper Fruit (4–7:1)",0,10
+NULL,"Extraction Solvent: Ethanol 80% (V/V)",0,13
+NULL,"Cayenne Pepper Soft Extract",0,2
+NULL,Nonivamide,0,13
+NULL,"Paracetamol Bp",0,25
+NULL,"Fluid Extract From Gentian Root (1: 1)",0,1
+NULL,"Extraction Solvent: Ethanol 50% (V / V)",0,1
+NULL,"Fluid Extract Of Wormwood (1:1)",0,1
+NULL,"Extraction Solvent: Ethanol 20% (V/V)",0,2
+NULL,"Fluid Extract From Melissa Leaf (1: 1)",0,1
+NULL,"Fluid Extract From Acorus Calamus Root (1:1)",0,1
+NULL,"Fluid Extract From Angelica Root (1: 1)",0,1
+NULL,"Extraction Solvent: Ethanol 30% (V/V)",0,6
+NULL,"Sodium Hydrogen Carbonate",0,631
+NULL,"Potassium Chloride",0,1096
+NULL,"Sodium Chloride",0,1517
+NULL,"Macrogol 3350",0,200
+NULL,"Lactic Acid",0,69
+NULL,"Salicylic Acid",0,223
+NULL,"Sildenafil Citrate",0,94
+NULL,"Idecabtagene Vicleucel",0,1
+NULL,Calcium,0,246
+NULL,Magnesium,0,144
+NULL,Sildenafil,0,289
+NULL,"Amphotericin B",0,32
+NULL,Aripiprazole,0,228
+NULL,Drospirenone,0,350
+NULL,Ethinylestradiol,0,1018
+NULL,"Rosuvastatin Calcium",0,137
+NULL,Prucalopride,0,31
+NULL,"Lactose Monohydrate",0,94
+NULL,"Prucalopride Succinate",0,5
+NULL,Bendroflumethiazide,0,25
+NULL,"Naltrexone Hydrochloride",0,37
+NULL,Irbesartan,0,234
+NULL,Amlodipine,0,888
+NULL,Bevacizumab,0,9
+NULL,"Fentanyl Citrate",0,55
+NULL,"Castor Oil",0,21
+NULL,Virgin,0,7
+NULL,"Sennae Folium",0,38
+NULL,Refined,0,205
+NULL,"Magnesium Sulfate Heptahydrate",0,142
+NULL,"Senna Pods",0,16
+NULL,Tinnevelly,0,11
+NULL,"Metformin Hydrochloride",0,867
+NULL,"Fluocinolone Acetonide",0,65
+NULL,Framycetin,0,2
+NULL,"Retinol Palmitate",0,74
+NULL,"Riboflavin Sodium Phosphate",0,35
+NULL,"Thiamine Hydrochloride",0,170
+NULL,"Ascorbic Acid",0,542
+NULL,Ergocalciferol,0,44
+NULL,Nicotinamide,0,133
+NULL,"Pyridoxine Hydrochloride",0,322
+NULL,Riboflavin,0,73
+NULL,Ibuprofen,0,1464
+NULL,"Abietic Acid",0,1
+NULL,"Esomeprazole Magnesium Dihydrate",0,31
+NULL,"Isoconazole Nitrate",0,10
+NULL,Moxifloxacin,0,110
+NULL,Neomycin,0,32
+NULL,Chlorobutanol,0,6
+NULL,Menthol,0,80
+NULL,Camphor,0,136
+NULL,Cineole,0,34
+NULL,"Sylvestris Pine Oil",0,6
+NULL,"Moxifloxacin Hydrochloride",0,61
+NULL,Bimatoprost,0,142
+NULL,Abiraterone,0,9
+NULL,Prednisolone,0,128
+NULL,"Amlodipine Besilate",0,346
+NULL,Bilastine,0,172
+NULL,Hydrocortisone,0,238
+NULL,"Viscum Album Abietis Ex Herba Recente Col. D30",0,1
+NULL,"Extract Of Fresh Fir Mistletoe Herb",0,2
+NULL,"Extract Of Phoradendron Leucarpum Herb (1:50)",0,3
+NULL,"Extraction Solvent: Sodium Monohydrogen Phosphate Dihydrate",0,3
+NULL,"Ascorbic Acid And Water For Injection (2.03:0.34:97.63)",0,3
+NULL,"Extract Of Fresh Almond Mistletoe Herb",0,2
+NULL,"Extract Of Fresh Birch Mistletoe Herb",0,2
+NULL,"Extract Of Fresh Hawthorn Mistletoe Herb",0,2
+NULL,"Extract Of Fresh Ash Mistletoe Herb",0,2
+NULL,"Viscum Album Fraxini Ex Herba Recente Col. D10",0,1
+NULL,"Viscum Album Fraxini Ex Herba Recente Col. D20",0,1
+NULL,"Viscum Album Fraxini Ex Herba Recente Col. D30",0,1
+NULL,"Extract Of Apple Tree Mistletoe (1:50)",0,1
+NULL,"Extraction Solvents: Sodium Monohydrogen Phosphate Dihydrate",0,1
+NULL,"Water For Injections (2.03:0.34:97.63)",0,1
+NULL,"Extract Of Fresh Pine Mistletoe Herb",0,2
+NULL,"Extract Of Fresh Oak Mistletoe Herb",0,2
+NULL,"Viscum Album Quercus Ex Herba Recente Col. D6",0,1
+NULL,"Ginkgo Biloba Extract",0,4
+NULL,"Echinacea Dil. D2",0,9
+NULL,"Gelsemium Sempervirens Dil. D4",0,22
+NULL,"Blatta Orientalis Urt.",0,1
+NULL,"Cetraria Islandica Dil. D 3",0,4
+NULL,"Datura Stramonium Dil. D 4",0,1
+NULL,"Euspongia Officinalis Dil. D 3",0,2
+NULL,"Natrium Sulfuricum Dil. D 4",0,2
+NULL,"Selenicereus Grandiflorus Dil. D 1",0,4
+NULL,"Matricaria Recutita Dil. D3",0,6
+NULL,"Grindelia Robusta Mother Tincture",0,2
+NULL,"Eriodictyon Californicum Dil. D2",0,4
+NULL,"Psychotria Ipecacuanha Dil. D4",0,19
+NULL,"Drosera Dil. D2",0,9
+NULL,Bortezomib,0,104
+NULL,"Brimonidine Tartrate",0,134
+NULL,Fluocinonide,0,11
+NULL,Hexetidine,0,22
+NULL,Ruscogenin,0,4
+NULL,"Paclitaxel Albumin-Bound",0,3
+NULL,"Fluticasone Propionate",0,525
+NULL,"Dry Extract Of Hederae Folium (5-7.5:1)",0,51
+NULL,"Extraction Solvent: Ethanol 30% (M/M)",0,57
+NULL,"Ibandronic Acid",0,114
+NULL,Vortioxetine,0,48
+NULL,"Ambroxol Hydrochloride",0,267
+NULL,"Respiratory Syncytial Virus",0,2
+NULL,"Subgroup A",0,1
+NULL,"Stabilized Prefusion F Protein 847a",0,1
+NULL,"Subgroup B",0,1
+NULL,"Stabilized Prefusion F Protein 847b",0,1
+NULL,"Epoetin Alfa",0,11
+NULL,"Sodium Valproate",0,159
+NULL,"Artemisia Absinthium Ex Herba Siccata",0,2
+NULL,"Ethanol. Infusum Ø",0,5
+NULL,"Terebinthina Laricina Dil. D3",0,1
+NULL,Ezetimibe,0,679
+NULL,"Terebinthina Laricina",0,5
+NULL,"Terebinthinae Aetheroleum Rectificatum",0,4
+NULL,"Betulae Folium",0,59
+NULL,"Sage Leaf (Salvia Officinalis)",0,29
+NULL,Thyme,0,65
+NULL,"Matricariae Flos",0,67
+NULL,"Melissa Leaf",0,54
+NULL,"Oxycodone Hydrochloride",0,253
+NULL,Beta-Alanine,0,1
+NULL,Paclitaxel,0,78
+NULL,Febuxostat,0,99
+NULL,"Potassium Citrate",0,25
+NULL,Travoprost,0,124
+NULL,"Acamprosate Calcium",0,8
+NULL,Ramipril,0,429
+NULL,"Risedronate Sodium",0,155
+NULL,"Calcium Carbonate",0,450
+NULL,"Cholecalciferol Concentrate",0,8
+NULL,Acarbose,0,38
+NULL,Carvedilol,0,118
+NULL,"Benzyl Benzoate",0,17
+NULL,"Dermatophagoides Pteronyssinus",0,70
+NULL,"Dermatophagoides Farinae",0,68
+NULL,"Phenylephrine Hydrochloride",0,490
+NULL,"Pseudoephedrine Hydrochloride",0,276
+NULL,"Triprolidine Hydrochloride",0,18
+NULL,"Azelastine Hydrochloride",0,230
+NULL,"Oxymetazoline Hydrochloride",0,134
+NULL,"Dextromethorphan Hydrobromide",0,231
+NULL,Acetylcysteine,0,343
+NULL,Filgrastim,0,11
+NULL,Colecalciferol,0,699
+NULL,Iohexol,0,27
+NULL,Glucose,0,279
+NULL,Anhydrous,0,127
+NULL,"Magnesium Chloride Hexahydrate",0,509
+NULL,"Calcium Chloride Dihydrate",0,796
+NULL,D-Glucose,0,2
+NULL,"Levothyroxine Sodium",0,140
+NULL,Metronidazole,0,205
+NULL,"Bisoprolol Fumarate",0,291
+NULL,"Acebutolol Hydrochloride",0,12
+NULL,Acebutolol,0,7
+NULL,"Diclofenac Sodium",0,533
+NULL,Aceclofenac,0,57
+NULL,Hydrochlorothiazide,0,1840
+NULL,Lisinopril,0,157
+NULL,Captopril,0,77
+NULL,"Enalapril Maleate",0,316
+NULL,Caffeine,0,475
+NULL,Adapalene,0,83
+NULL,"Benzoyl Peroxide",0,135
+NULL,Cefoperazone,0,7
+NULL,"Citalopram Hydrochloride",0,36
+NULL,Penfluridol,0,2
+NULL,Acemetacin,0,9
+NULL,Acetazolamide,0,26
+NULL,"Glucosamine Hydrochloride",0,25
+NULL,Acenocoumarol,0,11
+NULL,Ciprofloxacin,0,239
+NULL,"Methylprednisolone Aceponate",0,20
+NULL,"Aminocaproic Acid",0,4
+NULL,"Allopurinol Sodium",0,1
+NULL,"Benzoic Acid",0,10
+NULL,"Malic Acid",0,9
+NULL,"(S)-Lactic Acid",0,2
+NULL,"Perindopril Arginine",0,222
+NULL,Piracetam,0,81
+NULL,Terlipressin,0,16
+NULL,"Cyproterone Acetate",0,50
+NULL,"Eslicarbazepine Acetate",0,48
+NULL,Eslicarbazepine,0,4
+NULL,"Glatiramer Acetate",0,34
+NULL,"Potassium Acetate",0,110
+NULL,"Sodium Acetate",0,42
+NULL,"Acetazolamide Bp",0,2
+NULL,"Acetazolamide Ph. Eur.",0,1
+NULL,"Acetazolamide Sodium",0,4
+NULL,"Cetirizine Dihydrochloride",0,310
+NULL,"Acetylcholine Chloride",0,6
+NULL,"Water For Injection",0,401
+NULL,"Lysine Aspirin",0,14
+NULL,"Calcium-Sodium-Hydrogencitrate (6:6:3:7)",0,1
+NULL,Acetylleucine,0,7
+NULL,"Acetylsalicylic Acid Ph. Eur.",0,17
+NULL,Aciclovir,0,371
+NULL,"Folic Acid",0,218
+NULL,"Folic Acid Hydrate",0,16
+NULL,Aesculus,0,2
+NULL,Cortex,0,4
+NULL,"Ethanol. Decoctum Dil. D3",0,11
+NULL,"Antimonit Dil. D8",0,1
+NULL,"Gentiana Lutea",0,8
+NULL,Hamamelis,0,5
+NULL,"Millefolium Dil. D1",0,1
+NULL,"Aciclovir Sodium",0,4
+NULL,"Aciclovir Ph. Eur.",0,1
+NULL,"Aciclovir Bp",0,1
+NULL,Acitretin,0,13
+NULL,"Alendronic Acid",0,141
+NULL,"Thioctic Acid",0,48
+NULL,"Tranexamic Acid",0,134
+NULL,"Zoledronic Acid",0,62
+NULL,"Zoledronic Acid Monohydrate",0,95
+NULL,"Pantoprazole Sodium Sesquihydrate",0,132
+NULL,Esomeprazole,0,309
+NULL,Omeprazole,0,434
+NULL,"D,l-Lysine Acetylsalicylate",0,8
+NULL,"Alendronate Sodium Monohydrate",0,17
+NULL,"Sodium Alendronate Trihydrate Ph. Eur.",0,3
+NULL,"Carglumic Acid",0,21
+NULL,"Fusidic Acid",0,111
+NULL,"Gadoteric Acid",0,28
+NULL,"Tiaprofenic Acid",0,4
+NULL,"Ursodeoxycholic Acid",0,88
+NULL,"Anhydrous Zoledronic Acid",0,5
+NULL,"Sodium Alginate",0,176
+NULL,"Potassium Hydrogen Carbonate",0,48
+NULL,"Magnesium Carbonate Heavy",0,47
+NULL,"Boric Acid",0,42
+NULL,"Alendronate Sodium",0,16
+NULL,"Sodium Picosulfate",0,45
+NULL,"Magnesium Oxide",0,71
+NULL,"Citric Acid",0,43
+NULL,"Clodronate Disodium Tetrahydrate",0,13
+NULL,"Lidocaine Hydrochloride",0,508
+NULL,"Ibandronate Sodium Hydrate",0,12
+NULL,"Sodium Ibandronate",0,7
+NULL,"Mycophenolate Sodium",0,3
+NULL,"Trichloroacetic Acid",0,1
+NULL,"Valproic Acid",0,55
+NULL,"Icosapent Ethyl",0,6
+NULL,"Docosahexaenoic Acid Ethyl Ester",0,5
+NULL,Doconexent,0,11
+NULL,Icosapent,0,9
+NULL,"Omega-3-Acid Ethyl Esters 90",0,27
+NULL,"Acidum Alpha-Ketoglutaricum D200",0,2
+NULL,"Acidum Alpha-Ketoglutaricum D30",0,2
+NULL,"Acidum Alpha-Ketoglutaricum D10",0,8
+NULL,"Acidum Cis-Aconiticum D30",0,2
+NULL,"Acidum Cis-Aconiticum D200",0,2
+NULL,"Acidum Cis-Aconiticum D10",0,4
+NULL,"Acidum Citricum D10",0,1
+NULL,"Acidum Citricum D200",0,1
+NULL,"Acidum Citricum D30",0,1
+NULL,"Acidum Malicum D200",0,2
+NULL,"Acidum Malicum D30",0,2
+NULL,"Acidum Malicum D10",0,7
+NULL,"Acidum Formicicum Dil D12",0,2
+NULL,"Acidum Formicicum Dil. D30",0,2
+NULL,"Acidum Formicicum Dil. D200",0,2
+NULL,"Acidum Fumaricum D200",0,2
+NULL,"Acidum Fumaricum D30",0,2
+NULL,"Acidum Fumaricum D10",0,8
+NULL,"Nicotinic Acid",0,5
+NULL,"Acidum Phosphoricum Dil. D30",0,2
+NULL,"Acidum Phosphoricum Dil. D200",0,1
+NULL,"Acidum Phosphoricum Dil. D12",0,5
+NULL,"Acidum Succinicum D10",0,2
+NULL,"Acidum Succinicum D200",0,2
+NULL,"Acidum Succinicum D30",0,2
+NULL,"Natrium Sulfuricum Dil. D12",0,1
+NULL,"Acidum Arsenicosum Dil. D8",0,10
+NULL,"Secale Cornutum Dil. D4",0,9
+NULL,Pantoprazole,0,358
+NULL,"Ferrous Gluconate",0,45
+NULL,"Rabeprazole Sodium",0,102
+NULL,Buprenorphine,0,179
+NULL,L-Methionine,0,115
+NULL,Methionine,0,422
+NULL,"Mefenamic Acid",0,29
+NULL,Phenoxymethylpenicillin,0,37
+NULL,"Diethylamine Salicylate",0,24
+NULL,"Piperacillin Sodium",0,36
+NULL,"Tazobactam Sodium",0,32
+NULL,"Escitalopram Oxalate",0,86
+NULL,Pregabalin,0,245
+NULL,Celecoxib,0,104
+NULL,Clopidogrel,0,219
+NULL,"Ticlopidine Hydrochloride",0,33
+NULL,"Human Antithrombin",0,3
+NULL,Tretinoin,0,30
+NULL,Isotretinoin,0,85
+NULL,Clindamycin,0,161
+NULL,"Miconazole Nitrate",0,82
+NULL,"Clindamycin Phosphate",0,59
+NULL,Hydrous,0,22
+NULL,"Chlorhexidine Gluconate Solution Bp",0,3
+NULL,"Zinc Acetate",0,3
+NULL,"Anhydrous Benzoyl Peroxide",0,16
+NULL,"Magnesium Phosphoricum D8",0,4
+NULL,"Aconitum Napellus D4",0,20
+NULL,"Acidum Arsenicosum D30",0,2
+NULL,"Acidum Arsenicosum Dil. D30",0,5
+NULL,"Magnesium Phosphoricum Dil. D8",0,6
+NULL,"Gnaphalium Polycephalum Dil. D3",0,2
+NULL,"Aconitum Dil. D4",0,12
+NULL,"Citrullus Colocynthis Dil. D4",0,19
+NULL,"Gnaphalium Polycephalum Dil. D4",0,3
+NULL,"Aconitum Dil. D6",0,3
+NULL,Dexpanthenol,0,178
+NULL,"Aconitum Napellus D30",0,2
+NULL,"Lidocaine Hydrochloride Monohydrate",0,245
+NULL,Topiramate,0,109
+NULL,"Naphazoline Hydrochloride",0,40
+NULL,D-Camphor,0,31
+NULL,"Lavender Oil",0,35
+NULL,"Quarz Dil. D9 Oleos. (Hab",0,2
+NULL,"Vs. 8a Und 12j In Raffiniertem Erdnussöl)",0,2
+NULL,"Aconitum Napellus E Tubere Ferm 33c Dil. D9 Oleos. (Hab",0,2
+NULL,"Vs. 33c Und 12j",0,2
+NULL,"In Raffiniertem Erdnussöl)",0,2
+NULL,"Aconitum Napellus E Tubere Ferm 33c Dil. D29 (Hab",0,2
+NULL,"Vs. 33c)",0,172
+NULL,"Atropa Belladonna E Radice Ferm 33b Dil. D29 (Hab",0,2
+NULL,"Vs. 33b)",0,54
+NULL,"Toxicodendron Quercifolium E Foliis Ferm 33d Dil. D29 (Hab",0,2
+NULL,"Vs. 33d)",0,66
+NULL,"Aconitum Napellus E Tubere W 5% (Hab",0,1
+NULL,"Vs. 12g Mit Nativem Olivenöl)",0,7
+NULL,"Aconitum Napellus Rh Dil. D3",0,1
+NULL,"Bryonia Trit. D 3",0,8
+NULL,"Ferrum Phosphoricum Trit D 2",0,2
+NULL,"Belladonna Trit. D3",0,4
+NULL,"Aconitum Trit. D3",0,7
+NULL,"Gelsemium Trit. D3",0,6
+NULL,"Aconitum Napellus E Tubere Ferm 33c Dil. D2 (Hab",0,1
+NULL,"Bryonia Cretica Ferm 33b Dil. D2",0,10
+NULL,"Cinchona Succirubra E Cortice Ferm 35b Dil. D1 (Hab",0,1
+NULL,"Vs. 35b)",0,69
+NULL,"Eucalyptus Globulus E Foliis Ferm 33d Dil. D1 (Hab",0,2
+NULL,"Eupatorium Cannabinum Ex Herba Ferm 33c Dil. D1 (Hab",0,1
+NULL,"Aconitum Napellus E Tubere Ferm 33c Dil. D3 (Hab",0,2
+NULL,"Bryonia Cretica Ferm 33b Dil. D3",0,2
+NULL,"Cinchona Succirubra E Cortice Ferm 35b Dil. D2 (Hab",0,1
+NULL,"Eucalyptus Globulus E Foliis Ferm 33d Dil. D2 (Hab",0,1
+NULL,"Eupatorium Cannabinum Ex Herba Ferm 33c Dil. D2 (Hab",0,1
+NULL,"Eucalyptus Globulus Dil. D2",0,3
+NULL,"Aconitum Napellus Dil. D2",0,4
+NULL,"Aconitum Napellus Dil. D10",0,1
+NULL,"Aconitum Napellus Dil. D30",0,1
+NULL,"Aconitum Napellus Dil. D200",0,1
+NULL,"Eucalyptus Globulus Dil. D10",0,1
+NULL,"Eucalyptus Globulus Dil. D30",0,1
+NULL,"Psychotria Ipecacuanha Dil. D10",0,1
+NULL,"Psychotria Ipecacuanha Dil. D30",0,1
+NULL,"Psychotria Ipecacuanha Dil. D200",0,1
+NULL,"Psychotria Ipecacuanha Dil. D2",0,4
+NULL,"Anhydrous Tiotropium Bromide",0,4
+NULL,Tiotropium,0,33
+NULL,"Tiotropium Bromide",0,34
+NULL,Tadalafil,0,267
+NULL,Budesonide,0,327
+NULL,Etoricoxib,0,125
+NULL,Chloroquine,0,1
+NULL,"Sterilised Water For Injections",0,6
+NULL,Acrivastine,0,10
+NULL,"Phenoxymethylpenicillin Potassium",0,39
+NULL,Nimesulide,0,90
+NULL,Montelukast,0,167
+NULL,Telmisartan,0,285
+NULL,"Arnica Montana C4",0,8
+NULL,"Cimicifuga Racemosa C4",0,1
+NULL,"Sanguinaria Canadensis C4",0,1
+NULL,"Nitroglycerinum C4",0,1
+NULL,"Lachesis C5",0,1
+NULL,"Haemophilus Type B Conjugate Vaccine (Tetanus Toxoid Conjugate)",0,15
+NULL,"Tetanus Protein",0,3
+NULL,"Tetanus Toxoid",0,75
+NULL,Charcoal,0,48
+NULL,Activated,0,48
+NULL,"Papaverine Hydrochloride",0,21
+NULL,"Doxycycline Monohydrate",0,27
+NULL,"Xylometazoline Hydrochloride",0,377
+NULL,"Diphenhydramine Hydrochloride",0,121
+NULL,Guaifenesin,0,215
+NULL,Fluorouracil,0,53
+NULL,"Deanol Acetamidobenzoate",0,1
+NULL,"Hesperidin Methyl Chalcone",0,6
+NULL,"Magnesium Glycerophosphate",0,5
+NULL,Lidocaine,0,166
+NULL,Alteplase,0,6
+NULL,"Magnesium Pidolate",0,11
+NULL,Modafinil,0,40
+NULL,"Morphine Sulfate",0,89
+NULL,"Octenidine Dihydrochloride",0,60
+NULL,Phenoxyethanol,0,35
+NULL,"Saccharomyces Cerevisiae Type D Extract",0,2
+NULL,"Sodium Disulfide",0,1
+NULL,"Sodium Sulfide Nonahydrate",0,2
+NULL,"Saccharomyces Cerevisiae",0,31
+NULL,"Promethazine Hydrochloride",0,56
+NULL,Carbocisteine,0,145
+NULL,Betacarotene,0,11
+NULL,Biotin,0,83
+NULL,Cyanocobalamin,0,270
+NULL,Phytomenadione,0,60
+NULL,Pyridoxine,0,20
+NULL,Rutoside,0,16
+NULL,Thiamine,0,21
+NULL,Zinc,0,31
+NULL,Chromium,0,13
+NULL,Copper,0,25
+NULL,Iodine,0,41
+NULL,Iron,0,88
+NULL,Manganese,0,22
+NULL,"Pantothenic Acid",0,16
+NULL,Phosphorus,0,16
+NULL,Selenium,0,23
+NULL,Retinol,0,52
+NULL,Alpha-Tocopherol,0,18
+NULL,Molybdenum,0,16
+NULL,Lutein,0,1
+NULL,"P-Aminobenzoic Acid",0,4
+NULL,Lycopene,0,1
+NULL,Boron,0,14
+NULL,Vanadium,0,10
+NULL,Glycine,0,535
+NULL,"Succinic Acid",0,2
+NULL,"Norethisterone Acetate",0,42
+NULL,Estradiol,0,130
+NULL,"Estradiol Hemihydrate",0,77
+NULL,Etofenamate,0,46
+NULL,"Pelargonium Sidoides Dc Root Liquid Extract",0,1
+NULL,"Hydrocortisone Sodium Phosphate",0,14
+NULL,"Risedronate Monosodium",0,11
+NULL,"Atropine Sulfate",0,92
+NULL,"Peppermint Oil",0,88
+NULL,"Aluminium Hydroxide Gel",0,6
+NULL,Dried,0,13
+NULL,"Magnesium Carbonate",0,18
+NULL,"Magnesium Trisilicate",0,9
+NULL,Simeticone,0,103
+NULL,"Magnesium Hydroxide",0,87
+NULL,"Aluminium Hydroxide",0,120
+NULL,Pioglitazone,0,50
+NULL,"Pioglitazone Hydrochloride",0,12
+NULL,Urokinase,0,14
+NULL,"Deproteinised Hemoderivative Of Calf Blood",0,4
+NULL,"Insulin Human",0,98
+NULL,"Naproxen Sodium",0,76
+NULL,"Hedera Helix Dry Extract",0,1
+NULL,"Ethanol 30%",0,1
+NULL,"Benzydamine Hydrochloride",0,311
+NULL,"Nitrous Oxide",0,144
+NULL,Oxygen,0,355
+NULL,"Quinapril Hydrochloride",0,10
+NULL,"Ketorolac Trometamol",0,66
+NULL,Galantamine,0,74
+NULL,Hypromellose,0,38
+NULL,Nefopam,0,2
+NULL,"Nefopam Hydrochloride",0,39
+NULL,Quinapril,0,13
+NULL,"Atracurium Besilate",0,24
+NULL,"Loperamide Hydrochloride",0,260
+NULL,Denosumab,0,31
+NULL,"Aluminium Hydroxide-Magnesium Carbonate Co-Dried Gel",0,2
+NULL,Algeldrate,0,185
+NULL,"Solifenacin Succinate",0,325
+NULL,"Aluminium Phosphate",0,42
+NULL,"Diphtheria Toxoid",0,58
+NULL,"Pertussis Toxoid",0,36
+NULL,"Pertussis Filamentous Haemagglutinin",0,35
+NULL,"Pertussis Pertactin",0,24
+NULL,"Pertussis Fimbrial Agglutinogens (Fim) 2 And 3",0,8
+NULL,"Poliovirus (Inactivated) Type 3 (Saukett Strain)",0,49
+NULL,"Poliovirus (Inactivated) Type 2 (Mef-1 Strain)",0,50
+NULL,"Poliovirus (Inactivated) Type 1 (Mahoney Strain)",0,47
+NULL,"Doxazosin Mesilate",0,90
+NULL,Dutasteride,0,311
+NULL,Melatonin,0,136
+NULL,Sitagliptin,0,527
+NULL,Nifedipine,0,77
+NULL,Thiocolchicoside,0,47
+NULL,Etonogestrel,0,49
+NULL,"Ceftobiprole Medocaril Sodium",0,3
+NULL,"Tramadol Hydrochloride",0,469
+NULL,Temgicoluril,0,1
+NULL,"Eleutherococci Radix Dry Extract (16-25:1)",0,2
+NULL,"Delapril Hydrochloride",0,7
+NULL,"Manidipine Dihydrochloride",0,37
+NULL,Ropinirole,0,99
+NULL,Finasteride,0,240
+NULL,Loxapine,0,3
+NULL,"Tamsulosin Hydrochloride",0,567
+NULL,"Memantine Hydrochloride",0,197
+NULL,"Brentuximab Vedotin",0,1
+NULL,"Sodium Molybdate Dihydrate",0,20
+NULL,"Zinc Chloride",0,38
+NULL,"Ferric Chloride Hexahydrate",0,12
+NULL,"Potassium Iodide",0,168
+NULL,"Sodium Fluoride",0,103
+NULL,"Chromium Chloride Hexahydrate",0,44
+NULL,"Copper Chloride Dihydrate",0,22
+NULL,"Manganese Chloride Tetrahydrate",0,53
+NULL,"Sodium Selenite Anhydrous",0,13
+NULL,"Sodium Selenite",0,30
+NULL,"Copper Gluconate",0,27
+NULL,"Manganese Gluconate",0,18
+NULL,"Zinc Gluconate",0,33
+NULL,"Zinc Gluconate (Ph. Eur.)",0,2
+NULL,"Chromic Chloride",0,8
+NULL,"Sodium Molybdate",0,4
+NULL,"Ferrous Gluconate Hydrate Ph.Eur.",0,3
+NULL,"Methylphenidate Hydrochloride",0,162
+NULL,"Ammonium Chloride",0,14
+NULL,"Potassium Hydroxide",0,27
+NULL,"Dipotassium Hydrogen Phosphate Trihydrate",0,3
+NULL,Trometamol,0,8
+NULL,Betamethasone,0,148
+NULL,"Disodium Phosphate Dihydrate",0,7
+NULL,"Potassium Dihydrogen Phosphate",0,40
+NULL,"Hyoscine Butylbromide",0,78
+NULL,Ampicillin,0,74
+NULL,Desogestrel,0,179
+NULL,"Prednisolone Sodium Phosphate",0,19
+NULL,Riociguat,0,3
+NULL,Adenosine,0,29
+NULL,"Phytolacca Americana Dil. D4",0,12
+NULL,"Clematis Recta D1",0,1
+NULL,"Scrophularia Nodosa Ø",0,5
+NULL,"Adenosinum Triphosphoricum D200",0,1
+NULL,"Adenosinum Triphosphoricum D30",0,1
+NULL,"Adenosinum Triphosphoricum D6",0,1
+NULL,"Adenosinum Triphosphoricum D10",0,8
+NULL,Levonorgestrel,0,323
+NULL,"Amitriptyline Hydrochloride",0,76
+NULL,Lanolin,0,5
+NULL,Everolimus,0,60
+NULL,"Glyceryl Trinitrate",0,106
+NULL,"Camellia Sinensis",0,2
+NULL,"Trimetazidine Dihydrochloride",0,41
+NULL,"Dexamfetamine Sulfate",0,27
+NULL,Sulfadiazine,0,9
+NULL,"Lisinopril Dihydrate",0,86
+NULL,Nystatin,0,108
+NULL,Dienogest,0,182
+NULL,Lactose.,0,126
+NULL,"Dimethyl Fumarate",0,237
+NULL,Tamoxifen,0,47
+NULL,"Tamoxifen Citrate",0,37
+NULL,Desmopressin,0,64
+NULL,Anastrozole,0,144
+NULL,"Lisdexamfetamine Dimesylate",0,53
+NULL,"Diltiazem Hydrochloride",0,98
+NULL,"Polysorbate 80",0,6
+NULL,Squalene,0,5
+NULL,"Split Influenza Virus (Inactivated) Of Strain A/Vietnam/1194/2004 (H5n1) Like Strain Used (Nibrg-14)",0,1
+NULL,Dl-Alpha-Tocopherol,0,41
+NULL,"Sertraline Hydrochloride",0,64
+NULL,"Berberis Vulgaris D12",0,1
+NULL,"Cardiospermum Halicacabum D12",0,1
+NULL,"Acidum Formicicum D12",0,1
+NULL,"Natrium Chloratum D12",0,2
+NULL,"Thryallis Glauca D12",0,3
+NULL,"Zincum Isovalerianicum D12",0,3
+NULL,"Calcium Carbonicum Hahnemanni D6",0,4
+NULL,"Delphinium Staphisagria D6",0,3
+NULL,"Calcium Fluoratum D6",0,4
+NULL,"Matricaria Recutita D4",0,11
+NULL,"Podophyllum Peltatum D6",0,7
+NULL,"Atropa Bella-Donna D8",0,3
+NULL,"Ambra Grisea D12",0,1
+NULL,"Argentum Nitricum D12",0,5
+NULL,"Kalium Bromatum D12",0,4
+NULL,"Phosphorus D12",0,9
+NULL,"Acidum Formicicum D 6",0,1
+NULL,"Euphrasia 3c D4",0,1
+NULL,"Lobaria Pulmonaria D4",0,8
+NULL,"Allium Cepa D4",0,4
+NULL,"Schoenocaulon Officinale D4",0,5
+NULL,"Kalium Chloratum D6",0,7
+NULL,"Acidum Silicicum D6",0,15
+NULL,"Berberis Vulgaris D6",0,2
+NULL,"Thuja Occidentalis D4",0,2
+NULL,"Zincum Metallicum D12",0,4
+NULL,"Nicotiana Tabacum D12",0,1
+NULL,"Veratrum Album D4",0,12
+NULL,"Anamirta Cocculus D4",0,16
+NULL,"Strychnos Nux-Vomica D6",0,16
+NULL,Tenoxicam,0,16
+NULL,Allopurinol,0,122
+NULL,Tapentadol,0,63
+NULL,"Schoenocaulon Officinale Dil. D3",0,5
+NULL,"Spigelia Anthelmia Dil. D 3",0,6
+NULL,"Menyanthes Trifoliata Dil. D3",0,1
+NULL,"Piper Methysticum Spag. Peka Dil. D8",0,3
+NULL,"Aconitum Napellus Dil. D12",0,2
+NULL,"Bryonia Spag. Peka Dil. D3",0,2
+NULL,"Semecarpus Anacardium Dil. D6",0,5
+NULL,"Naloxone Hydrochloride",0,70
+NULL,Dexketoprofen,0,114
+NULL,"Healing Earth",0,11
+NULL,Propyphenazone,0,31
+NULL,"Ibuprofen Lysine",0,100
+NULL,"Adonis Vernalis Ferm 33d Dil. D2",0,3
+NULL,"Crataegus Laevigata/Monogyna E Foliis Et Fructibus Ferm 33d Dil. D2 (Hab",0,12
+NULL,"Kalmia Latifolia Dil. D 2",0,3
+NULL,"Adonis Vernalis Dil. D4",0,2
+NULL,"Nerium Oleander Dil. D4",0,2
+NULL,"Cactus Dil. D2",0,8
+NULL,"Kalium Carbonicum Dil. D3",0,4
+NULL,"Crataegus Dil. D2",0,9
+NULL,Tacrolimus,0,59
+NULL,"Zolpidem Tartrate",0,102
+NULL,Risperidone,0,199
+NULL,Epinephrine,0,228
+NULL,"Epinephrine Bitartrate",0,76
+NULL,"Epinephrine Hydrochloride",0,26
+NULL,"Adrenaline Acid Tartrate Bp",0,2
+NULL,Carbazochrome,0,3
+NULL,"Iodine (123i) Iobenguane",0,13
+NULL,"Doxorubicin Hydrochloride",0,79
+NULL,Anagrelide,0,62
+NULL,Levodropropizine,0,35
+NULL,"Acidum Formicicum D8",0,1
+NULL,"Histaminum Dihydrochloricum D22",0,1
+NULL,"Histaminum Dihydrochloricum D8",0,1
+NULL,"Ledum Palustre D8",0,1
+NULL,"Acidum Sulfuricum D22",0,1
+NULL,"Arctium D8",0,1
+NULL,"Pix Liquida D10",0,1
+NULL,"Tellurium Metallicum D10",0,1
+NULL,"Histaminum Dihydrochloricum D12",0,1
+NULL,"Acidum Arsenicosum D8",0,8
+NULL,"Lycopodium Clavatum D6",0,13
+NULL,"Selenium D12",0,2
+NULL,"Stibium Sulfuratum Nigrum D10",0,1
+NULL,"Strychnos Ignatii D6",0,15
+NULL,"Graphites D10",0,2
+NULL,"Sulfur D12",0,9
+NULL,"Thuja Occidentalis D6",0,9
+NULL,"Sulfur Trit. D 12",0,3
+NULL,"Strychnos Ignatii Trit. D6",0,2
+NULL,"Tellurium Metallicum Trit. D10",0,1
+NULL,"Acidum Arsenicosum Trit. D8",0,1
+NULL,"Acidum Formicicum Trit. D8",0,1
+NULL,"Acidum Sulfuricum Trit. D22",0,1
+NULL,"Arctium Trit. D8",0,1
+NULL,"Arnica Montana Trit. D6",0,1
+NULL,"Graphites Trit. D10",0,1
+NULL,"Histaminum Dihydrochloricum Trit. D8",0,1
+NULL,"Histaminum Dihydrochloricum Trit. D12",0,1
+NULL,"Histaminum Dihydrochloricum Trit. D22",0,1
+NULL,"Ledum Palustre Trit. D8",0,1
+NULL,"Lycopodium Clavatum Trit. D6",0,1
+NULL,"Pix Liquida Trit. D10",0,1
+NULL,"Selenium Trit. D12",0,1
+NULL,"Stibium Sulfuratum Nigrum Trit. D10",0,1
+NULL,"Thuja Occidentalis Trit. D6",0,3
+NULL,Lacosamide,0,190
+NULL,Sugammadex,0,110
+NULL,Tralokinumab,0,1
+NULL,"Donepezil Hydrochloride",0,203
+NULL,Glycerol,0,269
+NULL,"Cetylpyridinium Chloride",0,165
+NULL,Oxazepam,0,41
+NULL,"Octocog Alfa",0,3
+NULL,Temozolomide,0,35
+NULL,Fesoterodine,0,17
+NULL,"Eribulin Mesylate",0,17
+NULL,"Rurioctocog Alfa Pegol",0,1
+NULL,Radamts13,0,1
+NULL,Olanzapine,0,208
+NULL,Helium,0,29
+NULL,"Carbon Monoxide",0,31
+NULL,Air,0,18
+NULL,Medicinal,0,17
+NULL,Flunisolide,0,38
+NULL,"Beclometasone Dipropionate",0,234
+NULL,Desloratadine,0,196
+NULL,"Pseudoephedrine Sulphate",0,15
+NULL,Salmeterol,0,216
+NULL,"Beclometasone Dipropionate Anhydrous",0,51
+NULL,"Terbutaline Sulfate",0,20
+NULL,Dimeticone,0,37
+NULL,Metoclopramide,0,11
+NULL,Salbutamol,0,116
+NULL,"Salbutamol Sulfate",0,95
+NULL,"Fluticasone Furoate",0,40
+NULL,Bisacodyl,0,87
+NULL,Isoflurane,0,11
+NULL,Escin,0,26
+NULL,"Heparin Sodium",0,128
+NULL,"Dry Extract From Horse-Chestnut Equivalent To 1.1 - 2.5 G Fresh Seeds Corresponding To 50 Mg Aescin",0,1
+NULL,"Extraction Solvent: Ethanol 68% (V/V)",0,8
+NULL,"Aesculus Hippocastanum L. Seed Dry Extract",0,2
+NULL,"Hippocastani Corticis Extractum Siccum",0,1
+NULL,"Aesculus Hippocastanum D2",0,3
+NULL,"Arnica Montana Dil D2",0,6
+NULL,"Collinsonia Canadensis Dil. D1",0,1
+NULL,"Aesculus Hippocastanum Dil. D1",0,7
+NULL,"Carduus Marianus Dil. D1",0,5
+NULL,"Calcium Fluoratum Dil. D6",0,2
+NULL,"Aesculus Hippocastanum E Semine La 25% Sicc. (Hab",0,3
+NULL,"Vs. 12m)",0,3
+NULL,"Borago Officinalis Ex Herba La 20% (Hab",0,2
+NULL,"Prunus Spinosa E Fructibus La 25% (Hab",0,5
+NULL,"Vs. 12o)",0,5
+NULL,"Quercus Robur/Petraea E Cortice",0,4
+NULL,"Decoctum La 10% (Hab",0,3
+NULL,"Vs. 12k)",0,3
+NULL,"Solidago Virgaurea Ex Herba La 20% (Hab",0,1
+NULL,"Vipera Berus Dil. D12",0,4
+NULL,"Placenta Totalis Suis D30",0,4
+NULL,"Pulsatilla Pratensis Dil. D30",0,4
+NULL,"Aesculus Hippocastanum Dil. D30",0,2
+NULL,"Atropa Bella-Donna Dil. D12",0,2
+NULL,"Silybum Marianum Dil. D12",0,2
+NULL,"Calcium Fluoratum Dil. D30",0,2
+NULL,"Secale Cornutum Dil. D30",0,1
+NULL,"Daphne Mezereum Dil. D12",0,1
+NULL,"Hamamelis Virginiana Dil. D6",0,3
+NULL,"Aesculus Hippocastanum Dil. D12",0,1
+NULL,"Aesculus Hippocastanum Dil. D200",0,1
+NULL,"Aesculus Hippocastanum Dil. D6",0,9
+NULL,"Secale Cornutum Dil. D8",0,1
+NULL,"Dry Extract Of Horse-Chestnut Corresponding To 21 Mg Of Triterpene Glycosides",0,6
+NULL,"Expressed As Protoaescigenin: Extraction Solvent: Ethanol 50% (M/M)",0,6
+NULL,"Aesculus Seed Dry Extract",0,1
+NULL,Standardised,0,13
+NULL,"Dry Extract Of Horse Chestnut",0,3
+NULL,"Standardised (Der 5-7:1)",0,3
+NULL,"Adjusted To 12.5 Mg Of Triterpene Glycosides Calculated As Protoaescigenin",0,3
+NULL,"Extraction Solvent: Ethanol 50% (M/M)",0,10
+NULL,"Nicotiana Tabacum Dil D6",0,6
+NULL,"Potentilla Anserina Dil. D6",0,1
+NULL,"Cuprum Aceticum Dil. D6",0,8
+NULL,"Veratrum Album Dil. D6",0,2
+NULL,"Secale Cornutum Dil. D6",0,4
+NULL,"Lauromacrogol 400",0,17
+NULL,"Ethyl Chloride",0,1
+NULL,Voriconazole,0,146
+NULL,"Fosfomycin Trometamol",0,65
+NULL,"Afatinib Dimaleate",0,1
+NULL,Afatinib,0,4
+NULL,Fluoxetine,0,129
+NULL,Paroxetine,0,130
+NULL,"Metamizole Sodium Monohydrate",0,123
+NULL,Apremilast,0,87
+NULL,"Metoclopramide Hydrochloride",0,70
+NULL,"Metoclopramide Hydrochloride Monohydrate",0,54
+NULL,Aflibercept,0,14
+NULL,"Cefixime Trihydrate",0,28
+NULL,"Dexamethasone Phosphate",0,83
+NULL,Triflusal,0,14
+NULL,Sertraline,0,172
+NULL,"Alclometasone Dipropionate",0,3
+NULL,Fluconazole,0,307
+NULL,Mirtazapine,0,206
+NULL,"Eupatorium Perfoliatum D4",0,5
+NULL,"Baptisia Tinctoria D4",0,8
+NULL,"Ferrum Phosphoricum D8",0,13
+NULL,"Gelsemium Sempervirens D6",0,21
+NULL,"Aconitum Napellus D6",0,24
+NULL,"Euphorbium D6",0,5
+NULL,"Hydrargyrum Biiodatum D12",0,7
+NULL,"Luffa Operculata D12",0,10
+NULL,"Pulsatilla Pratensis D6",0,26
+NULL,"Sinapis Nigra D2",0,3
+NULL,"Sarcolacticum Acidum D12",0,4
+NULL,"Gentiana Lutea D1",0,5
+NULL,"Bryonia Cretica D6",0,5
+NULL,"Ferrum Phosphoricum D12",0,19
+NULL,"Bryonia D6",0,12
+NULL,"Acidum Lacticum D12",0,2
+NULL,"Lachesis D 12",0,18
+NULL,"Mercurius Solubilis Hahnemanni D12",0,1
+NULL,"Phytolacca Americana D6",0,5
+NULL,"Atropa Bella-Donna D6",0,17
+NULL,"Salvia Officinalis D1",0,1
+NULL,"Fluphenazine Decanoate",0,4
+NULL,"A/Turkey/Turkey/1/05 (H5n1)-Like Strain (Nibrg-23)",0,2
+NULL,Alprazolam,0,112
+NULL,"Theophylline Anhydrous",0,7
+NULL,Fosfomycin,0,42
+NULL,Theophylline,0,30
+NULL,Levomenthol,0,155
+NULL,Resorcinol,0,6
+NULL,Thymol,0,28
+NULL,Methotrexate,0,171
+NULL,"Lonoctocog Alfa",0,1
+NULL,"Zinc Sulphate",0,20
+NULL,"Benzalkonium Chloride",0,100
+NULL,"Hydrocortisone Hydrogen Succinate",0,5
+NULL,Fulvestrant,0,87
+NULL,Atomoxetine,0,49
+NULL,"Atomoxetine Hydrochloride",0,27
+NULL,Vamorolone,0,1
+NULL,Pentoxifylline,0,56
+NULL,"Tenofovir Disoproxil",0,142
+NULL,Nintedanib,0,67
+NULL,"Argentum Metallicum Praeparatum Dil. D6 Aquos.",0,2
+NULL,"Aspidium Filix-Mas",0,2
+NULL,"Spora Dil. D3",0,2
+NULL,"Conchae Dil. D7 Aquos.",0,3
+NULL,"Amanita Muscaria Dil. D8",0,2
+NULL,"Phosphorus Dil. D6",0,22
+NULL,"Argentum Metallicum Praeparatum Dil. D6",0,1
+NULL,"Conchae Dil. D7",0,1
+NULL,Vildagliptin,0,272
+NULL,"Meropenem Anhydrous",0,69
+NULL,Meropenem,0,44
+NULL,Levofloxacin,0,188
+NULL,Ticagrelor,0,181
+NULL,"Dantrolene Sodium",0,11
+NULL,"Ispaghula Seed",0,11
+NULL,"Ispaghula Husk",0,35
+NULL,"Plantago Ovata Forsk (Seed)",0,1
+NULL,"Cassia Angustifolia Vahl. (Polvo De Frutos)",0,2
+NULL,"Plantaginis Ovatae Semen",0,1
+NULL,"Plantago Ovata Forsk(Seed)",0,1
+NULL,"Trihexyphenidyl Hydrochloride",0,14
+NULL,Cinnarizine,0,69
+NULL,Dimenhydrinate,0,108
+NULL,Meloxicam,0,121
+NULL,"Dry Extract From Agnus Castus Fruit (7-13:1)",0,4
+NULL,"Extraction Solvent: 60% M/M",0,4
+NULL,"Dry Extract From Chaste Tree Fruits (7-11:1)",0,7
+NULL,"Extraction Solvent: Ethanol 70% (V/V)",0,61
+NULL,"Agnus Castus Ø",0,5
+NULL,"Pulsatilla Trit D3",0,2
+NULL,"Rosmarinus Officinalis Trit D2",0,1

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}Εφημερία{% endblock %}
+{% block page_title %}Εφημερία: {{ shift.dept_name }} - {{ shift.date }}{% endblock %}
+{% block content %}
+<div class="mb-3">
+  <a href="{{ url_for('shifts') }}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-arrow-left"></i> Πίσω</a>
+</div>
+<div class="row g-3">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-body">
+        <h6 class="fw-semibold">Στοιχεία Εφημερίας</h6>
+        <dl class="row small mb-0">
+          <dt class="col-5 text-muted">Τμήμα</dt><dd class="col-7">{{ shift.dept_name }}</dd>
+          <dt class="col-5 text-muted">Ημ/νία</dt><dd class="col-7">{{ shift.date }}</dd>
+          <dt class="col-5 text-muted">Βάρδια</dt><dd class="col-7">{{ shift.type }}</dd>
+          <dt class="col-5 text-muted">Κατάσταση</dt><dd class="col-7">{{ shift.status }}</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card-header bg-white border-0 pt-3 pb-0">
+        <h6 class="fw-semibold">Προσωπικό Εφημερίας ({{ staff_list|length }})</h6>
+      </div>
+      <div class="card-body p-0">
+        <table class="table table-sm mb-0">
+          <thead class="table-light"><tr><th>ΑΜΚΑ</th><th>Ονοματεπώνυμο</th><th>Τύπος</th></tr></thead>
+          <tbody>
+            {% for s in staff_list %}
+            <tr>
+              <td><code>{{ s.staff_amka }}</code></td>
+              <td>
+                <a href="{{ url_for('staff_view', amka=s.staff_amka) }}">
+                  {{ s.last_name }} {{ s.first_name }}
+                </a>
+              </td>
+              <td><span class="badge bg-secondary">{{ s.staff_type }}</span></td>
+            </tr>
+            {% else %}
+            <tr><td colspan="3" class="text-center py-3 text-muted">Δεν έχει οριστεί προσωπικό</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

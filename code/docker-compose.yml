@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - DB_HOST=host.docker.internal
+      - DB_PORT=3306
+      - DB_USER=root
+      - DB_PASSWORD=
+      - DB_NAME=ygeiopolis
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped

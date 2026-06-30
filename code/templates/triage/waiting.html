@@ -1,0 +1,201 @@
+{% extends "base.html" %}
+{% block title %}Αίθουσα Αναμονής{% endblock %}
+{% block page_title %}Αίθουσα Αναμονής Triage{% endblock %}
+{% block content %}
+
+<!-- Stats bar -->
+<div class="row g-3 mb-4">
+  <div class="col-md-3">
+    <div class="card stat-card orange p-3 text-center">
+      <div class="text-muted small">Σε Αναμονή</div>
+      <div class="fs-2 fw-bold text-warning">{{ stats.waiting }}</div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card stat-card blue p-3 text-center">
+      <div class="text-muted small">Σε Εξέλιξη</div>
+      <div class="fs-2 fw-bold text-primary">{{ stats.in_progress }}</div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card stat-card red p-3 text-center">
+      <div class="text-muted small">Επείγοντα (≥4)</div>
+      <div class="fs-2 fw-bold text-danger">{{ stats.critical }}</div>
+    </div>
+  </div>
+  <div class="col-md-3 d-flex align-items-center gap-2">
+    <a href="{{ url_for('triage_new') }}" class="btn btn-warning flex-fill">
+      <i class="bi bi-plus-circle me-1"></i> Νέα Εγγραφή
+    </a>
+    <a href="{{ url_for('triage') }}" class="btn btn-outline-secondary flex-fill">
+      <i class="bi bi-list me-1"></i> Όλες
+    </a>
+  </div>
+</div>
+
+<!-- Legend -->
+<div class="d-flex gap-2 mb-3 align-items-center">
+  <small class="text-muted me-2">Επείγον:</small>
+  <span class="badge badge-urgency-1 px-3 py-2">1 · Ελαφρύ</span>
+  <span class="badge badge-urgency-2 px-3 py-2">2 · Μέτριο</span>
+  <span class="badge badge-urgency-3 px-3 py-2">3 · Σοβαρό</span>
+  <span class="badge badge-urgency-4 px-3 py-2">4 · Επείγον</span>
+  <span class="badge badge-urgency-5 px-3 py-2">5 · Κρίσιμο</span>
+  <small class="ms-auto text-muted" id="clock"></small>
+</div>
+
+<!-- Waiting patients -->
+{% if waiting %}
+<h6 class="fw-semibold mb-2"><i class="bi bi-hourglass-split text-warning me-1"></i>Αναμονή ({{ waiting|length }})</h6>
+<div class="row g-3 mb-4">
+  {% for t in waiting %}
+  {% set lvl = t.urgency_level %}
+  {% if lvl == 5 %}
+    {% set border = "border-danger border-2" %}{% set bg = "bg-danger bg-opacity-10" %}
+  {% elif lvl == 4 %}
+    {% set border = "border-danger" %}{% set bg = "bg-danger bg-opacity-10" %}
+  {% elif lvl == 3 %}
+    {% set border = "border-warning" %}{% set bg = "bg-warning bg-opacity-10" %}
+  {% elif lvl == 2 %}
+    {% set border = "border-info" %}{% set bg = "bg-info bg-opacity-10" %}
+  {% else %}
+    {% set border = "border-success" %}{% set bg = "bg-success bg-opacity-10" %}
+  {% endif %}
+  <div class="col-md-4 col-lg-3">
+    <div class="card h-100 border {{ border }} {{ bg }}">
+      <div class="card-body p-3">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+          <span class="badge badge-urgency-{{ lvl }} px-3 py-1 fs-6">{{ lvl }}/5</span>
+          <span class="small text-muted">
+            <i class="bi bi-clock me-1"></i>
+            {% if t.wait_minutes %}
+              {% if t.wait_minutes < 60 %}
+                {{ t.wait_minutes }}λ
+              {% else %}
+                {{ (t.wait_minutes // 60) }}ω {{ (t.wait_minutes % 60) }}λ
+              {% endif %}
+            {% else %}—{% endif %}
+          </span>
+        </div>
+        <div class="fw-semibold">{{ t.last_name }} {{ t.first_name }}</div>
+        <div class="small text-muted mb-2">{{ t.age }} ετών · {{ t.sex }}</div>
+        <div class="small mb-3" style="min-height:2.5rem">
+          {{ t.symptoms[:100] }}{% if t.symptoms|length > 100 %}…{% endif %}
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+          <small class="text-muted">
+            <i class="bi bi-person-badge me-1"></i>{{ t.n_ln }} {{ t.n_fn }}
+          </small>
+          <button class="btn btn-sm btn-outline-primary"
+                  data-bs-toggle="modal" data-bs-target="#statusModal"
+                  data-amka="{{ t.patient_amka }}"
+                  data-arrival="{{ t.arrival_time }}"
+                  data-name="{{ t.last_name }} {{ t.first_name }}">
+            Ενημέρωση
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<div class="card mb-4">
+  <div class="card-body text-center py-5">
+    <i class="bi bi-check-circle text-success" style="font-size:3rem"></i>
+    <div class="mt-2 fw-semibold text-success">Κανείς δεν αναμένει αυτή τη στιγμή</div>
+    <div class="text-muted small mt-1">Όλοι οι ασθενείς έχουν εξυπηρετηθεί</div>
+  </div>
+</div>
+{% endif %}
+
+<!-- In progress -->
+{% if in_progress %}
+<h6 class="fw-semibold mb-2"><i class="bi bi-activity text-primary me-1"></i>Σε Εξέλιξη ({{ in_progress|length }})</h6>
+<div class="row g-3 mb-4">
+  {% for t in in_progress %}
+  <div class="col-md-4 col-lg-3">
+    <div class="card h-100 border border-primary bg-primary bg-opacity-10">
+      <div class="card-body p-3">
+        <div class="d-flex justify-content-between mb-2">
+          <span class="badge badge-urgency-{{ t.urgency_level }} px-2">{{ t.urgency_level }}/5</span>
+          <span class="badge bg-primary">Σε εξέλιξη</span>
+        </div>
+        <div class="fw-semibold">{{ t.last_name }} {{ t.first_name }}</div>
+        <div class="small text-muted mb-1">{{ t.age }} ετών · {{ t.sex }}</div>
+        <div class="small">{{ t.symptoms[:80] }}{% if t.symptoms|length > 80 %}…{% endif %}</div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<!-- Status update modal -->
+<div class="modal fade" id="statusModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form method="post" action="{{ url_for('triage_update_status') }}">
+        <input type="hidden" name="patient_amka" id="modalAmka">
+        <input type="hidden" name="arrival_time" id="modalArrival">
+        <div class="modal-header">
+          <h5 class="modal-title">Ενημέρωση: <span id="modalName"></span></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Νέα Κατάσταση</label>
+            <div class="d-grid gap-2">
+              <label class="border rounded p-2 cursor-pointer">
+                <input type="radio" name="status" value="ΣΕ ΕΞΕΛΙΞΗ" class="me-2">
+                <i class="bi bi-activity text-primary me-1"></i> Σε Εξέλιξη
+              </label>
+              <label class="border rounded p-2">
+                <input type="radio" name="status" value="ΟΛΟΚΛΗΡΩΘΗΚΕ" class="me-2">
+                <i class="bi bi-check-circle text-success me-1"></i> Ολοκληρώθηκε
+              </label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Αποτέλεσμα / Σημειώσεις</label>
+            <input class="form-control" name="outcome" placeholder="π.χ. Εισαγωγή, Παραπομπή, Αποχώρησε...">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ακύρωση</button>
+          <button type="submit" class="btn btn-primary">Αποθήκευση</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById('statusModal').addEventListener('show.bs.modal', function(e) {
+  const btn = e.relatedTarget;
+  document.getElementById('modalAmka').value = btn.dataset.amka;
+  document.getElementById('modalArrival').value = btn.dataset.arrival;
+  document.getElementById('modalName').textContent = btn.dataset.name;
+});
+
+// Live clock
+function updateClock() {
+  const now = new Date();
+  document.getElementById('clock').textContent =
+    now.toLocaleTimeString('el-GR', {hour:'2-digit', minute:'2-digit', second:'2-digit'});
+}
+updateClock();
+setInterval(updateClock, 1000);
+
+// Auto-refresh every 60s
+setTimeout(() => location.reload(), 60000);
+</script>
+
+<style>
+.badge-urgency-1 { background: #c8e6c9; color: #1b5e20; }
+.badge-urgency-2 { background: #fff9c4; color: #f57f17; }
+.badge-urgency-3 { background: #ffe0b2; color: #bf360c; }
+.badge-urgency-4 { background: #ffcdd2; color: #b71c1c; }
+.badge-urgency-5 { background: #311b92; color: #fff; }
+</style>
+{% endblock %}

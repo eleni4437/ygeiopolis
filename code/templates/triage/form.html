@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}Νέα Triage{% endblock %}
+{% block page_title %}Νέα Triage{% endblock %}
+{% block content %}
+<div class="mb-3">
+  <a href="{{ url_for('triage') }}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-arrow-left"></i> Πίσω</a>
+</div>
+<div class="card" style="max-width:600px">
+  <div class="card-body">
+    <form method="post">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label">Ασθενής *</label>
+          <select class="form-select" name="patient_amka" required>
+            <option value="">-- Επιλέξτε ασθενή --</option>
+            {% for p in patients_list %}
+            <option value="{{ p.amka }}">{{ p.last_name }} {{ p.first_name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Νοσηλευτής *</label>
+          <select class="form-select" name="nurse_amka" required>
+            <option value="">-- Επιλέξτε νοσηλευτή --</option>
+            {% for n in nurses %}
+            <option value="{{ n.amka }}">{{ n.last_name }} {{ n.first_name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Ώρα Άφιξης *</label>
+          <input class="form-control" type="datetime-local" name="arrival_time" required>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Επίπεδο Επείγοντος (1-5) *</label>
+          <select class="form-select" name="urgency_level" required>
+            <option value="1">1 - Ελαφρύ</option>
+            <option value="2">2 - Μέτριο</option>
+            <option value="3" selected>3 - Σοβαρό</option>
+            <option value="4">4 - Επείγον</option>
+            <option value="5">5 - Κρίσιμο</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label class="form-label">Συμπτώματα *</label>
+          <textarea class="form-control" name="symptoms" rows="4" required></textarea>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-warning" type="submit">
+            <i class="bi bi-check-circle me-1"></i> Καταχώρηση Triage
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

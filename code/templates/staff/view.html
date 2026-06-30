@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% block title %}{{ member.last_name }} {{ member.first_name }}{% endblock %}
+{% block page_title %}Προσωπικό: {{ member.last_name }} {{ member.first_name }}{% endblock %}
+{% block content %}
+<div class="mb-3">
+  <a href="{{ url_for('staff') }}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-arrow-left"></i> Πίσω</a>
+</div>
+
+<div class="row g-3">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-body text-center">
+        {% if member.image_url %}
+        <img src="{{ member.image_url }}" class="rounded-circle mb-3" style="width:80px;height:80px;object-fit:cover">
+        {% else %}
+        <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-3" style="width:72px;height:72px;font-size:1.6rem">
+          {{ member.first_name[0] }}{{ member.last_name[0] }}
+        </div>
+        {% endif %}
+        <h5 class="mb-0">{{ member.last_name }} {{ member.first_name }}</h5>
+        <div class="text-muted small mb-2">ΑΜΚΑ: {{ member.amka }}</div>
+        {% if member.staff_type == 'doctor' %}
+          <span class="badge bg-primary">Γιατρός</span>
+        {% elif member.staff_type == 'nurse' %}
+          <span class="badge bg-info text-dark">Νοσηλευτής</span>
+        {% else %}
+          <span class="badge bg-secondary">{{ member.staff_type }}</span>
+        {% endif %}
+      </div>
+    </div>
+    <div class="card mt-3">
+      <div class="card-body">
+        <dl class="row mb-0 small">
+          <dt class="col-5 text-muted">Ηλικία</dt><dd class="col-7">{{ member.age }}</dd>
+          <dt class="col-5 text-muted">Email</dt><dd class="col-7">{{ member.email }}</dd>
+          <dt class="col-5 text-muted">Τηλέφωνο</dt><dd class="col-7">{{ member.phone_number }}</dd>
+          <dt class="col-5 text-muted">Πρόσληψη</dt><dd class="col-7">{{ member.hiring_date }}</dd>
+          <dt class="col-5 text-muted">Κατάσταση</dt><dd class="col-7">{{ member.status }}</dd>
+          {% if doctor %}
+          <dt class="col-5 text-muted">Ειδικότητα</dt><dd class="col-7">{{ doctor.speciality }}</dd>
+          <dt class="col-5 text-muted">Βαθμός</dt><dd class="col-7">{{ doctor.doc_rank }}</dd>
+          <dt class="col-5 text-muted">Αδ. Αριθμός</dt><dd class="col-7">{{ doctor.license_number }}</dd>
+          {% endif %}
+          {% if nurse %}
+          <dt class="col-5 text-muted">Βαθμός</dt><dd class="col-7">{{ nurse.rank }}</dd>
+          <dt class="col-5 text-muted">Τμήμα</dt><dd class="col-7">{{ nurse.dept_name }}</dd>
+          {% endif %}
+        </dl>
+        {% if depts %}
+        <hr>
+        <div class="small text-muted mb-1">Τμήματα:</div>
+        {% for d in depts %}
+          <span class="badge bg-light text-dark border me-1">{{ d.dept_name }}</span>
+        {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-8">
+    <ul class="nav nav-tabs">
+      <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#tab-shifts">Εφημερίες ({{ shifts|length }})</a></li>
+      {% if evals %}
+      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab-evals">Αξιολογήσεις ({{ evals|length }})</a></li>
+      {% endif %}
+    </ul>
+    <div class="tab-content border border-top-0 rounded-bottom bg-white">
+      <div class="tab-pane fade show active p-0" id="tab-shifts">
+        <table class="table table-sm table-hover mb-0">
+          <thead class="table-light"><tr><th>Ημ/νία</th><th>Τμήμα</th><th>Βάρδια</th></tr></thead>
+          <tbody>
+            {% for s in shifts %}
+            <tr>
+              <td>{{ s.date }}</td>
+              <td>{{ s.dept_name }}</td>
+              <td><span class="badge bg-secondary">{{ s.type }}</span></td>
+            </tr>
+            {% else %}
+            <tr><td colspan="3" class="text-center text-muted py-3">Δεν υπάρχουν εφημερίες</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% if evals %}
+      <div class="tab-pane fade p-0" id="tab-evals">
+        <table class="table table-sm table-hover mb-0">
+          <thead class="table-light"><tr><th>Ασθενής</th><th>Ιατρική Φροντίδα</th><th>Ημ/νία</th></tr></thead>
+          <tbody>
+            {% for e in evals %}
+            <tr>
+              <td>{{ e.last_name }} {{ e.first_name }}</td>
+              <td>
+                {% for i in range(e.medical_care) %}<i class="bi bi-star-fill text-warning small"></i>{% endfor %}
+                {% for i in range(5 - e.medical_care) %}<i class="bi bi-star text-muted small"></i>{% endfor %}
+              </td>
+              <td class="small text-muted">{{ e.eval_date.strftime('%d/%m/%Y') if e.eval_date else '-' }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Εργαστηριακές Εξετάσεις{% endblock %}
+{% block page_title %}Εργαστηριακές Εξετάσεις{% endblock %}
+{% block content %}
+<div class="d-flex gap-2 mb-3">
+  <form class="d-flex gap-2" method="get">
+    <input class="form-control form-control-sm" name="q" value="{{ search }}" placeholder="Αναζήτηση..." style="width:300px">
+    <button class="btn btn-sm btn-primary">Αναζήτηση</button>
+    {% if search %}<a href="{{ url_for('lab_tests') }}" class="btn btn-sm btn-outline-secondary">✕</a>{% endif %}
+  </form>
+</div>
+<div class="card">
+  <div class="card-body p-0">
+    <table class="table table-hover mb-0">
+      <thead class="table-light">
+        <tr>
+          <th>Ασθενής</th>
+          <th>Εξέταση</th>
+          <th>Τύπος</th>
+          <th>Γιατρός</th>
+          <th>Ημ/νία</th>
+          <th>Κόστος</th>
+          <th>Αποτελέσματα</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for l in rows %}
+        <tr>
+          <td>
+            <a href="{{ url_for('patient_view', amka=l.patient_amka) }}">
+              {{ l.last_name }} {{ l.first_name }}
+            </a>
+          </td>
+          <td>{{ l.test_name[:50] }}</td>
+          <td><span class="badge bg-secondary">{{ l.type }}</span></td>
+          <td class="small text-muted">{{ l.d_ln }} {{ l.d_fn }}</td>
+          <td class="small">{{ l.date.strftime('%d/%m/%Y') if l.date else '-' }}</td>
+          <td>{{ '%.2f€'|format(l.cost) }}</td>
+          <td class="small text-muted">
+            {% if l.results %}
+              {{ l.results[:60] }}{% if l.results|length > 60 %}...{% endif %}
+            {% else %}
+              <span class="text-muted">Εκκρεμεί</span>
+            {% endif %}
+          </td>
+        </tr>
+        {% else %}
+        <tr><td colspan="7" class="text-center py-4 text-muted">Δεν βρέθηκαν εξετάσεις</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

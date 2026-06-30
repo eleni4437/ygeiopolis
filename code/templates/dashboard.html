@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block page_title %}Dashboard{% endblock %}
+{% block content %}
+
+<div class="row g-3 mb-4">
+  <div class="col-md-2 col-sm-4">
+    <div class="card stat-card blue p-3">
+      <div class="text-muted small">Ασθενείς</div>
+      <div class="fs-3 fw-bold text-primary">{{ stats.patients }}</div>
+    </div>
+  </div>
+  <div class="col-md-2 col-sm-4">
+    <div class="card stat-card green p-3">
+      <div class="text-muted small">Ενεργές Νοσηλείες</div>
+      <div class="fs-3 fw-bold text-success">{{ stats.active_hosp }}</div>
+    </div>
+  </div>
+  <div class="col-md-2 col-sm-4">
+    <div class="card stat-card orange p-3">
+      <div class="text-muted small">Triage (αναμονή)</div>
+      <div class="fs-3 fw-bold text-warning">{{ stats.triage_waiting }}</div>
+    </div>
+  </div>
+  <div class="col-md-2 col-sm-4">
+    <div class="card stat-card purple p-3">
+      <div class="text-muted small">Προσωπικό</div>
+      <div class="fs-3 fw-bold" style="color:#6a1b9a">{{ stats.staff }}</div>
+    </div>
+  </div>
+  <div class="col-md-2 col-sm-4">
+    <div class="card stat-card teal p-3">
+      <div class="text-muted small">Γιατροί</div>
+      <div class="fs-3 fw-bold" style="color:#00695c">{{ stats.doctors }}</div>
+    </div>
+  </div>
+  <div class="col-md-2 col-sm-4">
+    <div class="card stat-card red p-3">
+      <div class="text-muted small">Τμήματα</div>
+      <div class="fs-3 fw-bold text-danger">{{ stats.departments }}</div>
+    </div>
+  </div>
+</div>
+
+<div class="row g-3">
+  <div class="col-lg-7">
+    <div class="card">
+      <div class="card-header bg-white border-0 pt-3 pb-0">
+        <h6 class="fw-semibold mb-0"><i class="bi bi-clock-history me-2"></i>Τελευταίες Νοσηλείες</h6>
+      </div>
+      <div class="card-body p-0">
+        <table class="table table-hover mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>Ασθενής</th>
+              <th>Τμήμα</th>
+              <th>Δωμάτιο</th>
+              <th>Ημ/νία</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for h in recent_hosp %}
+            <tr>
+              <td>{{ h.first_name }} {{ h.last_name }}</td>
+              <td><span class="badge bg-light text-dark border">{{ h.dept_name }}</span></td>
+              <td>{{ h.room_number }}</td>
+              <td class="text-muted small">{{ h.entry_date.strftime('%d/%m/%Y') if h.entry_date else '-' }}</td>
+            </tr>
+            {% else %}
+            <tr><td colspan="4" class="text-center text-muted py-3">Δεν υπάρχουν δεδομένα</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-5">
+    <div class="card">
+      <div class="card-header bg-white border-0 pt-3 pb-0">
+        <h6 class="fw-semibold mb-0"><i class="bi bi-bar-chart me-2"></i>Νοσηλείες ανά Τμήμα (Top 5)</h6>
+      </div>
+      <div class="card-body">
+        {% for d in top_dept %}
+        <div class="mb-2">
+          <div class="d-flex justify-content-between mb-1">
+            <small>{{ d.dept_name }}</small>
+            <small class="fw-bold">{{ d.total }}</small>
+          </div>
+          {% set max_val = top_dept[0].total if top_dept else 1 %}
+          <div class="progress" style="height:8px">
+            <div class="progress-bar bg-primary" style="width:{{ (d.total / max_val * 100)|int }}%"></div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="card mt-3">
+      <div class="card-body">
+        <h6 class="fw-semibold mb-3"><i class="bi bi-lightning me-2"></i>Γρήγορες Ενέργειες</h6>
+        <div class="d-grid gap-2">
+          <a href="{{ url_for('patient_new') }}" class="btn btn-sm btn-outline-primary">
+            <i class="bi bi-person-plus me-1"></i> Νέος Ασθενής
+          </a>
+          <a href="{{ url_for('triage_new') }}" class="btn btn-sm btn-outline-warning">
+            <i class="bi bi-activity me-1"></i> Νέα Triage
+          </a>
+          <a href="{{ url_for('hospitalization_new') }}" class="btn btn-sm btn-outline-success">
+            <i class="bi bi-building-add me-1"></i> Νέα Νοσηλεία
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

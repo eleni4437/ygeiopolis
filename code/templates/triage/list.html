@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% block title %}Triage{% endblock %}
+{% block page_title %}Triage - Κατανομή Ασθενών{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <span class="badge badge-urgency-1 fs-6 px-3">1 - Ελαφρύ</span>
+    <span class="badge badge-urgency-2 fs-6 px-3">2 - Μέτριο</span>
+    <span class="badge badge-urgency-3 fs-6 px-3">3 - Σοβαρό</span>
+    <span class="badge badge-urgency-4 fs-6 px-3">4 - Επείγον</span>
+    <span class="badge badge-urgency-5 fs-6 px-3">5 - Κρίσιμο</span>
+  </div>
+  <a href="{{ url_for('triage_new') }}" class="btn btn-sm btn-warning">
+    <i class="bi bi-activity me-1"></i> Νέα Triage
+  </a>
+</div>
+
+<div class="card">
+  <div class="card-body p-0">
+    <table class="table table-hover mb-0">
+      <thead class="table-light">
+        <tr>
+          <th>Ασθενής</th>
+          <th>Άφιξη</th>
+          <th>Επείγον</th>
+          <th>Συμπτώματα</th>
+          <th>Νοσηλευτής</th>
+          <th>Κατάσταση</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for t in rows %}
+        <tr>
+          <td>
+            <a href="{{ url_for('patient_view', amka=t.patient_amka) }}">
+              {{ t.last_name }} {{ t.first_name }}
+            </a>
+          </td>
+          <td class="small">{{ t.arrival_time.strftime('%d/%m %H:%M') if t.arrival_time else '-' }}</td>
+          <td>
+            <span class="badge badge-urgency-{{ t.urgency_level }}">{{ t.urgency_level }}/5</span>
+          </td>
+          <td class="small text-muted" style="max-width:200px">
+            {{ t.symptoms[:80] }}{% if t.symptoms|length > 80 %}...{% endif %}
+          </td>
+          <td class="small">{{ t.n_ln }} {{ t.n_fn }}</td>
+          <td>
+            {% if t.status == 'ΑΝΑΜΟΝΗ' %}
+              <span class="badge bg-warning text-dark">Αναμονή</span>
+            {% elif t.status == 'ΟΛΟΚΛΗΡΩΘΗΚΕ' %}
+              <span class="badge bg-success">Ολοκληρώθηκε</span>
+            {% else %}
+              <span class="badge bg-secondary">{{ t.status }}</span>
+            {% endif %}
+          </td>
+          <td>
+            {% if t.status == 'ΑΝΑΜΟΝΗ' %}
+            <button class="btn btn-sm btn-outline-success" data-bs-toggle="modal"
+                    data-bs-target="#statusModal"
+                    data-amka="{{ t.patient_amka }}"
+                    data-arrival="{{ t.arrival_time }}">
+              Ενημέρωση
+            </button>
+            {% endif %}
+          </td>
+        </tr>
+        {% else %}
+        <tr><td colspan="7" class="text-center py-4 text-muted">Δεν υπάρχουν εγγραφές triage</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Status Modal -->
+<div class="modal fade" id="statusModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form method="post" action="{{ url_for('triage_update_status') }}">
+        <input type="hidden" name="patient_amka" id="modalAmka">
+        <input type="hidden" name="arrival_time" id="modalArrival">
+        <div class="modal-header">
+          <h5 class="modal-title">Ενημέρωση Κατάστασης Triage</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Νέα Κατάσταση</label>
+            <select class="form-select" name="status" required>
+              <option value="ΑΝΑΜΟΝΗ">Αναμονή</option>
+              <option value="ΣΕ ΕΞΕΛΙΞΗ">Σε εξέλιξη</option>
+              <option value="ΟΛΟΚΛΗΡΩΘΗΚΕ">Ολοκληρώθηκε</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Αποτέλεσμα</label>
+            <input class="form-control" name="outcome" placeholder="π.χ. Εισαγωγή, Παραπομπή...">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ακύρωση</button>
+          <button type="submit" class="btn btn-primary">Αποθήκευση</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script>
+document.getElementById('statusModal').addEventListener('show.bs.modal', function(e) {
+  const btn = e.relatedTarget;
+  document.getElementById('modalAmka').value = btn.dataset.amka;
+  document.getElementById('modalArrival').value = btn.dataset.arrival;
+});
+</script>
+{% endblock %}

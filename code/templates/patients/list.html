@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Ασθενείς{% endblock %}
+{% block page_title %}Ασθενείς{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <form class="d-flex gap-2" method="get">
+    <input class="form-control form-control-sm" name="q" value="{{ search }}" placeholder="Αναζήτηση (όνομα, ΑΜΚΑ)..." style="width:280px">
+    <button class="btn btn-sm btn-primary">Αναζήτηση</button>
+    {% if search %}<a href="{{ url_for('patients') }}" class="btn btn-sm btn-outline-secondary">✕</a>{% endif %}
+  </form>
+  <a href="{{ url_for('patient_new') }}" class="btn btn-sm btn-success">
+    <i class="bi bi-person-plus me-1"></i> Νέος Ασθενής
+  </a>
+</div>
+
+<div class="card">
+  <div class="card-body p-0">
+    <table class="table table-hover mb-0">
+      <thead class="table-light">
+        <tr>
+          <th>ΑΜΚΑ</th>
+          <th>Ονοματεπώνυμο</th>
+          <th>Ηλικία</th>
+          <th>Φύλο</th>
+          <th>Τηλέφωνο</th>
+          <th>Ασφάλεια</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for p in patients %}
+        <tr>
+          <td><code>{{ p.amka }}</code></td>
+          <td>{{ p.last_name }} {{ p.first_name }}</td>
+          <td>{{ p.age }}</td>
+          <td>{{ p.sex }}</td>
+          <td>{{ p.phone_number }}</td>
+          <td>{{ p.insurance }}</td>
+          <td>
+            <a href="{{ url_for('patient_view', amka=p.amka) }}" class="btn btn-xs btn-outline-primary btn-sm">
+              <i class="bi bi-eye"></i>
+            </a>
+            <a href="{{ url_for('patient_edit', amka=p.amka) }}" class="btn btn-xs btn-outline-secondary btn-sm">
+              <i class="bi bi-pencil"></i>
+            </a>
+          </td>
+        </tr>
+        {% else %}
+        <tr><td colspan="7" class="text-center py-4 text-muted">Δεν βρέθηκαν ασθενείς</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+<small class="text-muted">Εμφανίζονται έως 200 εγγραφές. Χρησιμοποιήστε αναζήτηση για φιλτράρισμα.</small>
+{% endblock %}

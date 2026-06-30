@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}Αξιολογήσεις{% endblock %}
+{% block page_title %}Αξιολογήσεις{% endblock %}
+{% block content %}
+
+{% if hosp_evals %}
+<div class="row g-3 mb-4">
+  <div class="col-12">
+    <h6 class="text-muted">Μέσες Αξιολογήσεις Νοσοκομείου ({{ hosp_evals.total }} αξιολογήσεις)</h6>
+  </div>
+  {% set metrics = [
+    ('Νοσηλευτική Φροντίδα', hosp_evals.nursing, 'teal'),
+    ('Καθαριότητα', hosp_evals.clean, 'blue'),
+    ('Φαγητό', hosp_evals.food, 'orange'),
+    ('Συνολική Εμπειρία', hosp_evals.overall, 'green'),
+  ] %}
+  {% for name, val, color in metrics %}
+  <div class="col-md-3">
+    <div class="card stat-card {{ color }} p-3 text-center">
+      <div class="text-muted small">{{ name }}</div>
+      <div class="fs-2 fw-bold">{{ '%.1f'|format(val or 0) }}</div>
+      <div class="small text-muted">/ 5.0</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<div class="card">
+  <div class="card-header bg-white border-0 pt-3 pb-0">
+    <h6 class="fw-semibold">Αξιολογήσεις Γιατρών</h6>
+  </div>
+  <div class="card-body p-0">
+    <table class="table table-hover mb-0">
+      <thead class="table-light">
+        <tr>
+          <th>Γιατρός</th>
+          <th>Ειδικότητα</th>
+          <th>Μέση Βαθμολογία</th>
+          <th>Σύνολο Αξιολογήσεων</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for e in doc_evals %}
+        <tr>
+          <td>
+            <a href="{{ url_for('staff_view', amka=e.amka) }}">
+              {{ e.last_name }} {{ e.first_name }}
+            </a>
+          </td>
+          <td><span class="badge bg-light text-dark border">{{ e.speciality }}</span></td>
+          <td>
+            {% set avg = e.avg_care|float %}
+            {% for i in range(avg|int) %}<i class="bi bi-star-fill text-warning"></i>{% endfor %}
+            {% if avg % 1 >= 0.5 %}<i class="bi bi-star-half text-warning"></i>{% endif %}
+            <span class="ms-1 fw-bold">{{ '%.1f'|format(avg) }}</span>
+          </td>
+          <td>{{ e.total_evals }}</td>
+        </tr>
+        {% else %}
+        <tr><td colspan="4" class="text-center py-4 text-muted">Δεν υπάρχουν αξιολογήσεις</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

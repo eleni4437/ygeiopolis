@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block title %}{{ 'Επεξεργασία' if patient else 'Νέος' }} Ασθενής{% endblock %}
+{% block page_title %}{{ 'Επεξεργασία' if patient else 'Νέος' }} Ασθενής{% endblock %}
+{% block content %}
+<div class="mb-3">
+  <a href="{{ url_for('patients') }}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-arrow-left"></i> Πίσω</a>
+</div>
+<div class="card" style="max-width:720px">
+  <div class="card-body">
+    <form method="post">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <label class="form-label">ΑΜΚΑ *</label>
+          <input class="form-control" name="amka" value="{{ patient.amka if patient else '' }}"
+                 maxlength="11" {{ 'readonly' if patient }} required>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Όνομα *</label>
+          <input class="form-control" name="first_name" value="{{ patient.first_name if patient else '' }}" required>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Επώνυμο *</label>
+          <input class="form-control" name="last_name" value="{{ patient.last_name if patient else '' }}" required>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Πατρώνυμο *</label>
+          <input class="form-control" name="patronym" value="{{ patient.patronym if patient else '' }}" required>
+        </div>
+        <div class="col-md-2">
+          <label class="form-label">Ηλικία *</label>
+          <input class="form-control" type="number" name="age" value="{{ patient.age if patient else '' }}" min="0" max="150" required>
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Φύλο *</label>
+          <select class="form-select" name="sex" required>
+            <option value="Άνδρας" {{ 'selected' if patient and patient.sex=='Άνδρας' }}>Άνδρας</option>
+            <option value="Γυναίκα" {{ 'selected' if patient and patient.sex=='Γυναίκα' }}>Γυναίκα</option>
+            <option value="Άλλο" {{ 'selected' if patient and patient.sex=='Άλλο' }}>Άλλο</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label class="form-label">Βάρος (kg)</label>
+          <input class="form-control" type="number" step="0.01" name="weight" value="{{ patient.weight if patient else '' }}" required>
+        </div>
+        <div class="col-md-2">
+          <label class="form-label">Ύψος (cm)</label>
+          <input class="form-control" type="number" name="height" value="{{ patient.height if patient else '' }}" required>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Διεύθυνση *</label>
+          <input class="form-control" name="address" value="{{ patient.address if patient else '' }}" required>
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Τηλέφωνο *</label>
+          <input class="form-control" name="phone_number" value="{{ patient.phone_number if patient else '' }}" required>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Email *</label>
+          <input class="form-control" type="email" name="email" value="{{ patient.email if patient else '' }}" required>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Επάγγελμα</label>
+          <input class="form-control" name="job" value="{{ patient.job if patient else '' }}">
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Ιθαγένεια</label>
+          <input class="form-control" name="citizenship" value="{{ patient.citizenship if patient else '' }}">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Επείγουσα Επαφή</label>
+          <input class="form-control" name="emergency_contact" value="{{ patient.emergency_contact if patient else '' }}">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Ασφάλεια</label>
+          <input class="form-control" name="insurance" value="{{ patient.insurance if patient else '' }}">
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">
+            <i class="bi bi-check-circle me-1"></i>
+            {{ 'Αποθήκευση' if patient else 'Καταχώρηση' }}
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
